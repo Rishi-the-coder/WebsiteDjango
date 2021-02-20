@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}
+About
+{% endblock title %}
+
+{% block head %}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+h1{
+  font-family: "Sofia";
+  font-size: 22px;
+  text-shadow: 2px 2px 5px red;
+}
+h2{
+  padding: 30px;
+  font-family: "Sofia";
+  font-size: 22px;
+  text-shadow: 2px 2px 5px blue;
+}
+</style>
+{% endblock head %}
+
+{% block body %}
+<div class="container-fluid px-0 ">
+<img src="/static/imgs/1.jpg" class="d-block w-100" alt="thumbnail">
+</div>
+<div class="text-center my-4">
+<b><strong><h1>ABOUT US</h1></strong></b>
+</div>
+<div class="text-center my-4"><strong>
+<h2>This is website is made by Rishi Srivastava.</h2>
+<h2>We are here to spread the knowledge of books to everyone..</h2>
+</strong></div>
+{% endblock body %}
