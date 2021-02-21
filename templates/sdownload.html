@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Science Books
+{% endblock title %}
+
+{% block head %}
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+    strong {
+        font-family: "Sofia";
+        font-size: 50px;
+    }
+
+    .parent {
+        width: 100%;
+        height: auto;
+        padding: 1%;
+    }
+
+    #icons {
+        margin-left: 2%;
+        margin-right: 2%;
+        float: left;
+        height: 40px;
+        width: 40px;
+        width: 80%;
+        background-color: white;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 25px;
+    }
+
+    #column {
+        font-family: "Sofia";
+        font-size: 30px;
+        text-align: center;
+        padding-top: 3%;
+        text-justify: auto;
+    }
+
+    #area {
+        padding-top: 3%;
+    }
+    
+    #im{
+        width: 99.99%;    
+        height: 40%;
+    }
+</style>
+{% endblock head %}
+
+{% block body %}
+<div class="container-fluid px-0">
+    <img src="/static/imgs/1.jpg" id="im">
+</div>
+
+<div class="text-center"><strong>Download Science Books</strong></div>
+
+<section class="parent">
+
+    <!--Second-->
+
+    <div id="area">
+        <section class="container my-4">
+            <a href="/static/PDFs/A Brief History Of Time.pdf" download="/static/PDFs/A Brief History Of Time.pdf">
+            <img src="/static/downl/s/1.jpg" class="d-block w-25 h-75" id="icons">
+            </a>
+        </section>
+
+        <section class="container my-4" id="column">
+            In A Brief History of Time, Stephen Hawking attempts
+            to explain a range of subjects in cosmology, including
+            the Big Bang, black holes and light cones, to the
+            non-specialist reader. His main goal is to give an overview
+            of the subject, but he also attempts to explain some complex
+            mathematics. <b>Click Pic To Download.</b>
+        </section>
+    </div>
+
+    <!--Second-->
+
+    <div id="area">
+        <section class="container my-4">
+            <a href="/static/PDFs/For The Love Of Physics.pdf" download="/static/PDFs/For The Love Of Physics.pdf">
+                <img src="/static/downl/s/2.jpg" class="d-block w-25 h-75" id="icons">
+                </a>
+        </section>
+
+        <section class="container my-4" id="column">
+            Recounting his own exciting discoveries as a pioneer in
+            the field of X-ray astronomy--arriving at MIT right at
+            the start of an astonishing revolution in astronomy--he also
+            brings to life the power of physics to reach into the vastness
+            of space and unveil exotic uncharted territories, from the marvels
+            of a supernova explosion inthe Large Magellanic Cloud to the
+            unseeable depths of black holes. <p><b>Click Pic To Download.</b></p>
+        </section>
+    </div>
+
+    <!--Third-->
+
+    <div id="area">
+        <section class="container my-4">
+            <a href="/static/PDFs/Six Easy Pieces.pdf" download="/static/PDFs/Six Easy Pieces.pdf">
+                <img src="/static/downl/s/3.jpg" class="d-block w-25 h-75" id="icons">
+                </a>
+        </section>
+
+        <section class="container my-4" id="column">
+            This book explains physics in six sections which include: atoms in motion; basic physics; the relation of
+            physics to other sciences; conservation of energy; the theory of gravitation; and quantum behavior. In the
+            first section Feynman describes the basic atomic theory.<p><b>Click Pic To Download.</b></p>
+        </section>
+    </div>
+
+    <!--Fourth-->
+
+    <div id="area">
+        <section class="container my-4 py-5">
+            <a href="/static/PDFs/How to Automate Boring Stuff With Python.pdf" download="/static/PDFs/How to Automate Boring Stuff With Python.pdf">
+                <img src="/static/downl/s/4.jpg" class="d-block w-25 h-75" id="icons">
+                </a>
+        </section>
+
+        <section class="container my-0 py-0" id="column">
+            I read this book pretty awesome book if you are a beginner . Basically Idea Behind this book give you brief 
+            introduction of python and give some knowledge of backend web development. this book tech you how you work on 
+            django(web framework) . That’s pretty good.<p><b>Click Pic To Download.</b></p>
+        </section>
+    </div>
+
+    <!--Fifth-->
+
+    <div id="area">
+        <section class="container my-4 py-5">
+            <a href="/static/PDFs/Figuring The Joy Of Numbers.pdf" download="/static/PDFs/Figuring The Joy Of Numbers.pdf">
+                <img src="/static/downl/s/5.jpg" class="d-block w-25 h-75" id="icons">
+                </a>
+        </section>
+
+        <section class="container my-0 py-0" id="column">
+            In Figuring: The Joy of Numbers, Shakuntala Devi dramatizes the endless fascination of numbers and their
+            ability to amaze and entertain. She offers easy-to-learn short cuts on how to add long columns in your head,
+            multiply, divide and find square roots quickly, almost magically.  <p><b>Click Pic To Download.</b></p>
+        </section>
+    </div>
+
+</section>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------->>
+
+
+
+{% endblock body %}
